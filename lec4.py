@@ -76,6 +76,7 @@ b: right hand side h^2*f
 n = 10 # h= 1/n
 x = np.linspace(0,1,num=n+1)
 A = getMatrix(n = n-1, isDiagDom=False)
+print(A)
 f_func = lambda x: np.sin(2*PI*x)
 f = f_func(x[1:-1]) # x[1:-1] represents x_1 to x_{n-1}
 b = f*(1/n)**2
